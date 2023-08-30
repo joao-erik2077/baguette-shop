@@ -1,8 +1,8 @@
-import { Text } from "react-native";
+import Slider from '../../components/Slider';
 
 export default function Main() {
     return <>
-        <Text>Main</Text>
+        <Slider />
     </>;
 }
 
