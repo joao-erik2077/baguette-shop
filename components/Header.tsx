@@ -13,7 +13,7 @@ export default function Header() {
 const styles = StyleSheet.create({
     header: {
         height: 100,
-        backgroundColor: '#FFED66',
+        backgroundColor: '#FF7F11',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
@@ -25,6 +25,12 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 27,
         fontWeight: '700',
-        color: '#342C2E',
+        color: '#f1f1f1',
+        textShadowColor: 'rgba(0, 0, 0, .3)',
+        textShadowOffset: {
+            width: 0,
+            height: 0,
+        },
+        textShadowRadius: 10,
     },
 });
