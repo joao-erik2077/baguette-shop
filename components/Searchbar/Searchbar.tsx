@@ -8,7 +8,7 @@ export default function Searchbar() {
         <SearchBar 
             round 
             lightTheme 
-            placeholder='Recherche...' 
+            placeholder='Pesquisar...' 
             containerStyle={styles.container} 
             inputContainerStyle={styles.inputContainer}
             onChangeText={value => setValue(value)}
@@ -26,5 +26,7 @@ const styles = StyleSheet.create({
     inputContainer: {
         backgroundColor: '#f1f1f1',
         borderRadius: 50,
+        shadowColor: '#010101',
+        elevation: 4,
     },
 });

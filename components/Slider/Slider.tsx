@@ -9,7 +9,7 @@ const windowWidth = Dimensions.get('window').width;
 export default function Slider() {
     const images = [image1, image2, image3, image4];
     return <>
-        <LinearGradient colors={['#F08A4B', '#FFFFFF']}>
+        <LinearGradient colors={['#F08A4B', 'transparent']}>
             <ScrollView horizontal snapToInterval={windowWidth}>
                 { images.map((image, index) => <Image source={image} style={styles.image} key={index} />) }
             </ScrollView>
