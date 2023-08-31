@@ -5,13 +5,9 @@ import Icons from '@expo/vector-icons/MaterialCommunityIcons';
 import { Text } from 'react-native';
 import CategoriesList from '../../components/Category/CategoriesList';
 import Category from '../../components/Category/Category';
-import ImageBread from '../../assets/Categories/CategoryBread.jpg';
-import ImageCake from '../../assets/Categories/CategoryCake.jpg';
-import ImageSalgado from '../../assets/Categories/CategorySalgados.jpg';
-import ImageRefri from '../../assets/Categories/CategoryRefri.jpg';
-import ImageCandy from '../../assets/Categories/CategoryCandy.jpg';
 import ProductList from '../../components/Product/ProductList';
 import Product from '../../components/Product/Product';
+import { ImageCake, ImageBread, ImageCandy, ImageRefri, ImageSalgado } from '../../assets/Categories/categories';
 
 export default function Main() {
     return <>
