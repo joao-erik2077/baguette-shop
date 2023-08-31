@@ -2,9 +2,11 @@ import { ScrollView, StyleSheet, View } from "react-native";
 
 export default function CategoriesList(props) {
     return <>
-        <ScrollView contentContainerStyle={styles.container} horizontal>
-            { props.children }
-        </ScrollView>
+        <View style={{height: 110}}>
+            <ScrollView contentContainerStyle={styles.container} horizontal showsHorizontalScrollIndicator={false}>
+                { props.children }
+            </ScrollView>
+        </View>
     </>;
 }
 
