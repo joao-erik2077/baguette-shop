@@ -19,9 +19,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-around',
-        
-        shadowColor: '#000000',
-        elevation: 10,
     },
     title: {
         fontSize: 27,
