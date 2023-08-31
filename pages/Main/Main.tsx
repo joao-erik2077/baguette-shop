@@ -2,9 +2,14 @@ import Slider from '../../components/Slider/Slider';
 import Item from '../../components/Item/Item';
 import ItemGradient from '../../components/Item/ItemGradient';
 import Icons from '@expo/vector-icons/MaterialCommunityIcons';
-import { StyleSheet, Text } from 'react-native';
+import { Text } from 'react-native';
 import CategoriesList from '../../components/Category/CategoriesList';
 import Category from '../../components/Category/Category';
+import ImageBread from '../../assets/Categories/CategoryBread.jpg';
+import ImageCake from '../../assets/Categories/CategoryCake.jpg';
+import ImageSalgado from '../../assets/Categories/CategorySalgados.jpg';
+import ImageRefri from '../../assets/Categories/CategoryRefri.jpg';
+import ImageCandy from '../../assets/Categories/CategoryCandy.jpg';
 
 export default function Main() {
     return <>
@@ -24,12 +29,11 @@ export default function Main() {
             </Text>
         </ItemGradient>
         <CategoriesList>
-            <Category name='cat1' />
-            <Category name='cat2' />
-            <Category name='cat3' />
+            <Category name='Pães' image={ImageBread} />
+            <Category name='Bolos' image={ImageCake} />
+            <Category name='Salgados' image={ImageSalgado} />
+            <Category name='Doces' image={ImageCandy} />
+            <Category name='Bebidas' image={ImageRefri} />
         </CategoriesList>
     </>;
 }
-
-const styles = StyleSheet.create({
-});
