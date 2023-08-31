@@ -11,6 +11,7 @@ export default function Searchbar() {
             placeholder='Pesquisar...' 
             containerStyle={styles.container} 
             inputContainerStyle={styles.inputContainer}
+            inputStyle={{fontSize: 13}}
             onChangeText={value => setValue(value)}
             value={value}
         />
@@ -28,5 +29,6 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         shadowColor: '#010101',
         elevation: 4,
+        height: 40,
     },
 });
