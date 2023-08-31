@@ -6,7 +6,8 @@ export default function Item(props) {
     return <>
         <View style={[
                 styles.container,
-                props.center && { justifyContent: 'center'}
+                props.center && { justifyContent: 'center'},
+                props.backgroundColor ? {backgroundColor: props.backgroundColor} : {backgroundColor: '#FFFFFF'},
             ]}>
             { props.children }
         </View>
@@ -18,7 +19,6 @@ const styles = StyleSheet.create({
         width: screenWidth - 10,
         height: 40,
         margin: 5,
-        backgroundColor: '#FFFFFF',
         borderRadius: 5,
         shadowColor: '#010101',
         elevation: 3,
