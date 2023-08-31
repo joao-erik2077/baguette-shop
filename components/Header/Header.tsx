@@ -1,6 +1,6 @@
 import { StyleSheet, View } from "react-native";
-import Cart from './Cart';
-import Searchbar from './Searchbar';
+import Cart from '../Cart/Cart';
+import Searchbar from '../Searchbar/Searchbar';
 
 export default function Header() {
     return <>
