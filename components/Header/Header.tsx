@@ -14,7 +14,7 @@ export default function Header() {
 const styles = StyleSheet.create({
     header: {
         height: 100,
-        backgroundColor: '#F08A4B',
+        backgroundColor: '#F07A32',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',

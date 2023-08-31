@@ -16,7 +16,7 @@ export default function Main() {
                 &nbsp;em milhares de produtos!
             </Text>
         </Item>
-        <ItemGradient colors={['#E3A05B', '#E35B7E']} center leftIcon='angle-right'>
+        <ItemGradient colors={['#E68F30', '#E63054']} center leftIcon='angle-right'>
             <Text style={{color: '#ffffff', fontWeight: 'bold'}}>
                 Consiga frete grátis em mais produtos assinando o nosso plano mensal
             </Text>
