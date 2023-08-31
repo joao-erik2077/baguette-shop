@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         padding: 5,
         display: 'flex',
+        overflow: 'hidden',
     },
     image: {
         height: 150,
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     name: {
-        fontSize: 15,
+        fontSize: 13,
         lineHeight: 20,
         color: 'gray',
     },
