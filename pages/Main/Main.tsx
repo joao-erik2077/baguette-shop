@@ -1,5 +1,6 @@
 import Slider from '../../components/Slider/Slider';
 import Item from '../../components/Item/Item';
+import ItemGradient from '../../components/Item/ItemGradient';
 import Icons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StyleSheet, Text } from 'react-native';
 
@@ -15,6 +16,11 @@ export default function Main() {
                 &nbsp;em milhares de produtos!
             </Text>
         </Item>
+        <ItemGradient colors={['#E3A05B', '#E35B7E']} center leftIcon='angle-right'>
+            <Text style={{color: '#ffffff', fontWeight: 'bold'}}>
+                Consiga frete grátis em mais produtos assinando o nosso plano mensal
+            </Text>
+        </ItemGradient>
     </>;
 }
 

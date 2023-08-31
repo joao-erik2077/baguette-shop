@@ -17,7 +17,7 @@ export default function Item(props) {
 const styles = StyleSheet.create({
     container: {
         width: screenWidth - 10,
-        height: 40,
+        minHeight: 40,
         margin: 5,
         borderRadius: 5,
         shadowColor: '#010101',
