@@ -8,7 +8,10 @@ import Category from '../../components/Category/Category';
 import ProductList from '../../components/Product/ProductList';
 import Product from '../../components/Product/Product';
 import { ImageCake, ImageBread, ImageCandy, ImageRefri, ImageSalgado } from '../../assets/Categories/categories';
-
+import {
+    Beijinho, BoloDeChocolate, BoloDeLimao, Brigadeiro, CocaCola, 
+    Coxinha, PaoDeQueijo, PaoFrances, Pepsi, SanduicheDeFrango,
+} from '../../assets/Products/products';
 export default function Main() {
     return <>
         <Slider />
@@ -35,18 +38,18 @@ export default function Main() {
         </CategoriesList>
 
         <ProductList>
-            <Product name='teste1' />
-            <Product name='teste2' />
-            <Product name='teste3' />
-            <Product name='teste4' />
-            <Product name='teste5' />
+            <Product name='Beijinho' image={Beijinho} price={2.49} />
+            <Product name='Pão de Queijo' image={PaoDeQueijo} price={7.99} />
+            <Product name='Pão Francês' image={PaoFrances} price={1.89} />
+            <Product name='Bolo de Limão' image={BoloDeLimao} price={40.19} />
+            <Product name='Coca Cola' image={CocaCola} price={11.99} />
         </ProductList>
         <ProductList>
-            <Product name='teste6' />
-            <Product name='teste7' />
-            <Product name='teste8' />
-            <Product name='teste9' />
-            <Product name='teste10' />
+            <Product name='Bolo de Chocolate' image={BoloDeChocolate} price={49.98} />
+            <Product name='Sanduíche de Frango' image={SanduicheDeFrango} price={9.78} />
+            <Product name='Brigadeiro' image={Brigadeiro} price={1.99} />
+            <Product name='Coxinha' image={Coxinha} price={5.97} />
+            <Product name='Pepsi' image={Pepsi} price={10.99} />
         </ProductList>
     </>;
 }
