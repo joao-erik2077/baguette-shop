@@ -10,6 +10,8 @@ import ImageCake from '../../assets/Categories/CategoryCake.jpg';
 import ImageSalgado from '../../assets/Categories/CategorySalgados.jpg';
 import ImageRefri from '../../assets/Categories/CategoryRefri.jpg';
 import ImageCandy from '../../assets/Categories/CategoryCandy.jpg';
+import ProductList from '../../components/Product/ProductList';
+import Product from '../../components/Product/Product';
 
 export default function Main() {
     return <>
@@ -35,5 +37,20 @@ export default function Main() {
             <Category name='Doces' image={ImageCandy} />
             <Category name='Bebidas' image={ImageRefri} />
         </CategoriesList>
+
+        <ProductList>
+            <Product name='teste1' />
+            <Product name='teste2' />
+            <Product name='teste3' />
+            <Product name='teste4' />
+            <Product name='teste5' />
+        </ProductList>
+        <ProductList>
+            <Product name='teste6' />
+            <Product name='teste7' />
+            <Product name='teste8' />
+            <Product name='teste9' />
+            <Product name='teste10' />
+        </ProductList>
     </>;
 }
