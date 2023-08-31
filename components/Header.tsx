@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Cart from './Cart';
+import Searchbar from './Searchbar';
 
 export default function Header() {
     return <>
         <View style={styles.header}>
-            <Text style={styles.title}>BAGUETTES DE FRANCE</Text>
+            <Searchbar />
             <Cart />
         </View>
     </>;
@@ -13,7 +14,7 @@ export default function Header() {
 const styles = StyleSheet.create({
     header: {
         height: 100,
-        backgroundColor: '#FF7F11',
+        backgroundColor: '#F08A4B',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
