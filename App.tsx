@@ -1,4 +1,4 @@
-import { SafeAreaView, StatusBar, Dimensions } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 import Main from './pages/Main/Main';
 import Header from './components/Header/Header';
 
