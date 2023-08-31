@@ -8,7 +8,7 @@ export default function Slider() {
     const images = [image1, image2, image3, image4];
     return <>
         <ScrollView horizontal snapToInterval={400}>
-            { images.map(image => <Image source={image} style={styles.image} />) }
+            { images.map((image, index) => <Image source={image} style={styles.image} key={index} />) }
         </ScrollView>
     </>;
 }
@@ -16,6 +16,6 @@ export default function Slider() {
 const styles = StyleSheet.create({
     image: {
         width: 400,
-        height: 250,
+        height: 200,
     },
 });
