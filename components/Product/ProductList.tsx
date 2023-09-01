@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, View } from "react-native";
 
 export default function ProductList(props) {
     return <>
-        <View style={{height: 220}}>
+        <View style={{height: 215}}>
             <ScrollView contentContainerStyle={styles.container} horizontal showsHorizontalScrollIndicator={false}>
                 { props.children }
             </ScrollView>

@@ -24,7 +24,7 @@ export default function Main() {
                 &nbsp;para milhares de produtos!
             </Text>
         </Item>
-        <ItemGradient colors={['#E68F30', '#E63054']} center leftIcon='angle-right'>
+        <ItemGradient colors={['#C7462C', '#5350E5']} center leftIcon='angle-right'>
             <Text style={{color: '#ffffff', fontWeight: 'bold'}}>
                 Consiga descontos em mais produtos assinando o nosso plano mensal
             </Text>
@@ -44,6 +44,13 @@ export default function Main() {
             <Product name='Bolo de Limão' image={BoloDeLimao} price={40.19} />
             <Product name='Coca Cola' image={CocaCola} price={11.99} />
         </ProductList>
+
+        <ItemGradient colors={['#D4462C', '#B10F2E']} center>
+            <Text style={{color: '#FFFFFF', fontWeight: 'bold'}}>
+                Os melhores produtos do mundo e talvez até do Brasil
+            </Text>
+        </ItemGradient>
+
         <ProductList>
             <Product name='Bolo de Chocolate' image={BoloDeChocolate} price={49.98} />
             <Product name='Sanduíche de Frango' image={SanduicheDeFrango} price={9.78} />
