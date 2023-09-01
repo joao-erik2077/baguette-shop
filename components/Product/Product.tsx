@@ -12,8 +12,10 @@ export default function Product(props: ProductProps) {
     return <>
         <View style={styles.container}>
             <Image source={props.image} style={styles.image} />
-            <Text style={[styles.price, styles.text]}>{valueFormattedWithSymbol}</Text>
-            <Text style={[styles.name, styles.text]}>{props.name}</Text>
+            <View style={styles.textContainer}>
+                <Text style={[styles.price, styles.text]}>{valueFormattedWithSymbol}</Text>
+                <Text style={[styles.name, styles.text]}>{props.name}</Text>
+            </View>
         </View>
     </>;
 }
@@ -33,7 +35,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
     },
     image: {
-        height: 120,
+        height: '60%',
         width: '80%',
         alignSelf: 'center',
         marginBottom: 20,
@@ -50,5 +52,10 @@ const styles = StyleSheet.create({
     },
     text: {
         marginLeft: 10,
+    },
+    textContainer: {
+        borderTopColor: '#CCCCCC',
+        borderTopWidth: .2,
+        paddingTop: 5,
     },
 });
