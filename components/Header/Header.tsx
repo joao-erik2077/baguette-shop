@@ -1,23 +1,25 @@
 import { StyleSheet, View } from "react-native";
 import Icons from '@expo/vector-icons/FontAwesome5';
 import Searchbar from '../Searchbar/Searchbar';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Header() {
     return <>
-        <View style={styles.header}>
-            <Icons name='align-justify' size={30} color='#f1f1f1' style={styles.shadow} />
-            <View style={{marginRight: 10, marginLeft: 10}}>
-                <Searchbar />
+        <LinearGradient colors={['#D94E23', '#F07A32']}>
+            <View style={styles.header}>
+                <Icons name='align-justify' size={30} color='#f1f1f1' style={styles.shadow} />
+                <View style={{marginRight: 10, marginLeft: 10}}>
+                    <Searchbar />
+                </View>
+                <Icons name='shopping-cart' size={30} color='#f1f1f1' style={styles.shadow} />
             </View>
-            <Icons name='shopping-cart' size={30} color='#f1f1f1' style={styles.shadow} />
-        </View>
+        </LinearGradient>
     </>;
 }
 
 const styles = StyleSheet.create({
     header: {
         height: 100,
-        backgroundColor: '#F07A32',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
