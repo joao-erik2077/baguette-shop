@@ -11,8 +11,10 @@ export default function Product(props: ProductProps) {
     const [valueFormattedWithSymbol] = formatCurrency({amount: props.price, code: 'BRL'});
     return <>
         <View style={styles.container}>
-            <Image source={props.image} style={styles.image} />
-            <View style={styles.textContainer}>
+            <View style={styles.imageContainer}>
+                <Image source={props.image} style={styles.image} />
+            </View>
+            <View>
                 <Text style={[styles.price, styles.text]}>{valueFormattedWithSymbol}</Text>
                 <Text style={[styles.name, styles.text]}>{props.name}</Text>
             </View>
@@ -34,11 +36,20 @@ const styles = StyleSheet.create({
         display: 'flex',
         overflow: 'hidden',
     },
+    imageContainer: {
+        height: '65%',
+        width: '100%',
+        marginBottom: 10,
+        borderRadius: 10,
+        alignSelf: 'center',
+        justifyContent: 'center',
+        borderColor: '#F1F1F1',
+        borderWidth: 1,
+    },
     image: {
-        height: '60%',
+        height: '80%',
         width: '80%',
         alignSelf: 'center',
-        marginBottom: 20,
     },
     name: {
         fontSize: 13,
@@ -52,10 +63,5 @@ const styles = StyleSheet.create({
     },
     text: {
         marginLeft: 10,
-    },
-    textContainer: {
-        borderTopColor: '#CCCCCC',
-        borderTopWidth: .2,
-        paddingTop: 5,
     },
 });
