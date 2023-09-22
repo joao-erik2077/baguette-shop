@@ -1,6 +1,6 @@
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
-import Main from './pages/Main/Main';
-import Header from './components/Header/Header';
+import Main from './src/pages/Main/Main';
+import Header from './src/components/Header/Header';
 
 export default function App() {
   return <>
